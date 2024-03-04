@@ -7,9 +7,18 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    App: typeof import('./src/app/index.vue')['default']
+    AppLayoutsAuth: typeof import('./src/app/layouts/auth.vue')['default']
+    AppLayoutsDefault: typeof import('./src/app/layouts/default.vue')['default']
+    AppLayoutsSecond: typeof import('./src/app/layouts/second.vue')['default']
+    PagesAbout: typeof import('./src/pages/about/index.vue')['default']
+    PagesIndex: typeof import('./src/pages/index/index.vue')['default']
+    PagesProfile: typeof import('./src/pages/profile/index.vue')['default']
+    PagesProfileEdit: typeof import('./src/pages/profile/edit.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TheFooter: typeof import('./src/components/TheFooter.vue')['default']
-    TheHeader: typeof import('./src/components/TheHeader.vue')['default']
+    SharedUiButton: typeof import('./src/shared/ui/button.vue')['default']
+    WidgetsTheFooter: typeof import('./src/widgets/TheFooter.vue')['default']
+    WidgetsTheHeader: typeof import('./src/widgets/TheHeader.vue')['default']
   }
 }

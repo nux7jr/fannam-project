@@ -3,7 +3,7 @@
 
 <template>
     <header>
-      <TheHeader></TheHeader>
+      <WidgetsTheHeader></WidgetsTheHeader>
     </header>
     <main class="page container">
       <router-view></router-view>
