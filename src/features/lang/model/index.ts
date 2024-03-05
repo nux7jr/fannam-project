@@ -14,7 +14,7 @@ export function useLang() {
         }
         return defaultLocale();
     }
-    function isLocaleSupported(locale) {
+    function isLocaleSupported(locale: any) {
         // i18n.global.availableLocales проверить!
         return i18n.global.availableLocales.includes(locale);
     }
@@ -40,13 +40,13 @@ export function useLang() {
         return 'ru';
         // return import.meta.env.VITE_DEFAULT_LOCALE;
     }
-    function currentLocale(newLocale) {
+    function currentLocale(newLocale: any) {
         i18n.global.locale.value = newLocale;
         return i18n.global.locale.value;
     }
-    async function switchLanguage(newLocale) {
+    async function switchLanguage(newLocale: any) {
         currentLocale(newLocale);
-        document.querySelector("html").setAttribute("lang", newLocale)
+        document.querySelector("html")?.setAttribute("lang", newLocale)
         localStorage.setItem("user-locale", newLocale)
     }
     return {
