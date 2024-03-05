@@ -11,6 +11,8 @@ declare module 'vue' {
     AppLayoutsAuth: typeof import('./src/app/layouts/auth.vue')['default']
     AppLayoutsDefault: typeof import('./src/app/layouts/default.vue')['default']
     AppLayoutsSecond: typeof import('./src/app/layouts/second.vue')['default']
+    FeaturesLangUiLangSwitcher: typeof import('./src/features/lang/ui/LangSwitcher.vue')['default']
+    FeaturesThemeUiThemeSwitcher: typeof import('./src/features/theme/ui/themeSwitcher.vue')['default']
     PagesAbout: typeof import('./src/pages/about/index.vue')['default']
     PagesIndex: typeof import('./src/pages/index/index.vue')['default']
     PagesProfile: typeof import('./src/pages/profile/index.vue')['default']
