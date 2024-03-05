@@ -4,8 +4,6 @@ import path from 'path';
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 
-
-
 export default defineConfig({
   plugins: [
     vue(),
@@ -17,8 +15,7 @@ export default defineConfig({
     }),
     AutoImport({
       dts: './src/auto-imports.d.ts',
-      imports: ['vue', 'vue-router', 'pinia'],
-
+      imports: ['vue', 'vue-router', 'pinia', '@vueuse/core'],
       dirs: [
         './src/shared/**',
         './src/app/**'

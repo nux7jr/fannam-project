@@ -7,10 +7,9 @@ import "@/app/assets/css/app.css";
 
 // vue
 import { createApp } from 'vue';
-import { createPinia } from 'pinia'
 import App from '@/app/index.vue';
-import Router from '@/app/router';
+import Router from '@/app/providers/router';
+import i18n from '@/shared/i18n';
+import pinia from '@/app/providers/stores';
 
-const pinia = createPinia()
-
-createApp(App).use(pinia).use(Router).mount("#app");
+createApp(App).use(i18n).use(pinia).use(Router).mount("#app");

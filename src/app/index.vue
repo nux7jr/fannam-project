@@ -1,9 +1,11 @@
 <script setup lang="ts">
+import {Header} from '@/widgets/header/ui'
+
 </script>
 
 <template>
     <header>
-      <WidgetsTheHeader></WidgetsTheHeader>
+      <Header></Header>
     </header>
     <main class="page container">
       <router-view></router-view>

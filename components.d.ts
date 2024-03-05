@@ -17,8 +17,13 @@ declare module 'vue' {
     PagesProfileEdit: typeof import('./src/pages/profile/edit.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SharedIconsLogo: typeof import('./src/shared/icons/logo.vue')['default']
     SharedUiButton: typeof import('./src/shared/ui/button.vue')['default']
-    WidgetsTheFooter: typeof import('./src/widgets/TheFooter.vue')['default']
-    WidgetsTheHeader: typeof import('./src/widgets/TheHeader.vue')['default']
+    SharedUiSearch: typeof import('./src/shared/ui/search.vue')['default']
+    WidgetsFooter: typeof import('./src/widgets/footer/index.vue')['default']
+    WidgetsHeaderUi: typeof import('./src/widgets/header/ui/index.vue')['default']
+    WidgetsHeaderUiDesktop: typeof import('./src/widgets/header/ui/desktop.vue')['default']
+    WidgetsHeaderUiMobile: typeof import('./src/widgets/header/ui/mobile.vue')['default']
+    WidgetsProfile: typeof import('./src/widgets/profile/index.vue')['default']
   }
 }
