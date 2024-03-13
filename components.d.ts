@@ -26,6 +26,9 @@ declare module 'vue' {
     WidgetsHeaderUi: typeof import('./src/widgets/header/ui/index.vue')['default']
     WidgetsHeaderUiDesktop: typeof import('./src/widgets/header/ui/desktop.vue')['default']
     WidgetsHeaderUiMobile: typeof import('./src/widgets/header/ui/mobile.vue')['default']
+    WidgetsModalSingInUi: typeof import('./src/widgets/modal/sing-in/ui/index.vue')['default']
+    WidgetsModalSingInUiModalLogin: typeof import('./src/widgets/modal/sing-in/ui/modalLogin.vue')['default']
+    WidgetsModalSingInUiModalSingIn: typeof import('./src/widgets/modal/sing-in/ui/modalSingIn.vue')['default']
     WidgetsProfile: typeof import('./src/widgets/profile/index.vue')['default']
   }
 }

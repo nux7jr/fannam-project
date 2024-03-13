@@ -1,0 +1,1 @@
+export { default as modalSingIn } from './modalSingIn.vue';
